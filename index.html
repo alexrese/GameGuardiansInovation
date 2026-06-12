@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alex Rese: Guardiões da Inovação</title>
+  <meta name="description" content="Protótipo jogável de aventura lateral com progressão e investimentos em níveis." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">PROTÓTIPO ORIGINAL · JAVASCRIPT + CANVAS</p>
+        <h1>Alex Rese: Guardiões da Inovação</h1>
+      </div>
+      <div class="top-actions">
+        <button id="soundButton" class="small-button" type="button" aria-pressed="true">Som: ligado</button>
+        <button id="resetButton" class="small-button danger" type="button">Reiniciar progresso</button>
+      </div>
+    </header>
+
+    <section class="game-frame" aria-label="Área do jogo">
+      <canvas id="gameCanvas" width="1280" height="720" tabindex="0" aria-label="Jogo Guardiões da Inovação"></canvas>
+      <div id="touchControls" class="touch-controls" aria-label="Controles de toque">
+        <div class="touch-left">
+          <button data-key="ArrowLeft" aria-label="Mover para a esquerda">◀</button>
+          <button data-key="ArrowRight" aria-label="Mover para a direita">▶</button>
+        </div>
+        <div class="touch-right">
+          <button data-key="KeyK" aria-label="Pular">▲</button>
+          <button data-key="KeyJ" aria-label="Disparar energia rúnica">✦</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="instructions" aria-label="Instruções">
+      <div><strong>Movimento:</strong> A/D ou ←/→</div>
+      <div><strong>Pulo:</strong> K, X ou ↑</div>
+      <div><strong>Energia rúnica:</strong> J ou Z</div>
+      <div><strong>Pausa:</strong> P</div>
+      <div><strong>Academia:</strong> pressione Enter nas telas de resumo</div>
+    </section>
+  </main>
+  <script defer src="src/game.js"></script>
+</body>
+</html>
